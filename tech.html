@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Animation</title>
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrap" >
+          <video autoplay playsinline muted loop preload>
+              <source type="video/webm" src="images/video.mp4" />
+          </video>
+          <svg viewBox="0 0 160 90">
+              <g class="header-backdrop" mask="url(#header-mask)">
+                  <rect id="cover"
+                        x="-5%" y="-5%" width="110%" height="110%" />
+              </g>
+              <g class="transparent-text">
+                  <text id="heading" class="heading-text"
+                        text-anchor="middle"
+                        x="33%"  y="50%" dy="0.3em">tech.</text>
+              </g>
+              <mask id="header-mask">
+                  <use xlink:href="#cover" style="fill: white;" />
+                  <use xlink:href="#heading" />
+              </mask>
+          </svg>
+        </div>
+    </header>
+    
+    <section class="info">
+        <div class="info-text">
+            <h2>technology</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ea repellat soluta maiores molestiae nam architecto facilis corrupti placeat iusto illum eveniet adipisci mollitia exercitationem quaerat ab eum, ipsam in.</p>
+            <p>Morbi lorem enim, vehicula sollicitudin sapien vitae, auctor venenatis libero. Etiam nunc est, pulvinar a luctus vitae, hendrerit in lorem.</p>
+        </div>
+        
+        <div class="drone">
+            <img src="images/Drone-PNG.png" alt="">
+        </div>
+
+        <div class="info-btns">
+            <a href="#" class="btn btn1"><span>press1</span></a>
+            <a href="#" class="btn btn2"><span>press2</span></a>
+        </div>
+    </section>
+
+    <section class="video-scroll">
+        <section class="video-scroll-section">
+            <div class="video-scroll-text vst1">
+                <h1>Maecenas vel</h1>
+                <p>Curabitur nec ex dignissim elit mollis venenatis a malesuada odio. Phasellus non varius enim. Duis mi metus, ullamcorper et tortor a, elementum ultrices enim. Integer fringilla scelerisque aliquet.</p>
+            </div>
+            <div class="video-scroll-text vst2">
+                <h1>Aliquam erat volutpat</h1>
+                <p>Nam ante quam, fringilla sed nunc nec, dictum pretium elit. Nulla fermentum, quam eget efficitur tincidunt, lorem tortor congue felis, sit amet sollicitudin mi neque sit amet lorem.</p>
+            </div>
+            <div class="video-scroll-text vst3">
+                <h1>Quisque nec</h1>
+                <p>Nam iaculis et velit eu efficitur. In laoreet, mi sit amet laoreet porta, mauris sem viverra enim, nec faucibus sem diam vel metus. Aenean sed arcu malesuada, faucibus est eget, facilisis ante.</p>
+            </div>
+            <div class="video-scroll-text vst4">
+                <h1>Etiam tincidunt</h1>
+                <p>Morbi sed vehicula elit. Nam tincidunt iaculis quam, a commodo est cursus eget. Sed pretium diam in sapien eleifend hendrerit. Suspendisse tempor mauris vitae ipsum efficitur feugiat. Ut quis venenatis justo. Sed eleifend pellentesque risus, in lobortis augue congue eu.</p>
+            </div>
+        <!-- TODO mozda da svaki blok teksta bude unutar pos:absolute diva i onda da se svaki blok zakaci kako ide skrol -->
+        </section>
+
+        <video src="images/output.mp4"></video>
+    </section>
+
+    <!-- cards section -->
+    <section class="cards-section">
+
+        <div class="cards-section-text">
+            <h1>Cras suscipit euismod</h1>
+            <p>Aliquam blandit, mi non fringilla blandit, metus quam ultricies enim, eget vulputate mauris ligula a massa. Donec lobortis risus ac scelerisque congue.</p>
+            <p>Cras feugiat suscipit mattis.</p>
+        </div>
+        <div class="cards">
+            <!-- card one -->
+            <div class="card">
+                <div class="card-image controller">
+                    <img src="images/controller 1.png" alt="controller">
+                </div>
+                <div class="card-blue">
+                    <div class="card-info">
+                        <h3>Pellentesque :</h3>
+                        <p>elit</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maecenas :</h3>
+                        <p>risus</p>
+                    </div>
+                </div>
+                <div class="card-white">
+                    <div class="card-description">
+                        <h2>Suspendisse</h2>
+                        <p>Maecenas fringilla lectus purus. Nulla suscipit turpis vel ligula venenatis lacinia. Pellentesque vitae lobortis enim, eu sollicitudin velit.</p>
+                    </div>
+                </div>
+                <!-- <div class="card-btns">
+                    <a href="#" class="btn btn2 btn-card">start</a>
+                </div> -->
+            </div>
+            <!-- card one end -->
+            <!-- card two -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/olympus.png" alt="">
+                </div>
+                <div class="card-blue">
+                    <div class="card-info">
+                        <h3>Pellentesque :</h3>
+                        <p>nisi</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maecenas :</h3>
+                        <p>sed</p>
+                    </div>
+                </div>
+                <div class="card-white">
+                    <div class="card-description">
+                        <h2>Curabitur</h2>
+                        <p>Curabitur malesuada ligula lacus, at elementum nisl convallis ut. Vestibulum semper consequat. Pellentesque a tincidunt ligula. Nullam tristique dui vel viverra ultrices. </p>
+                    </div>
+                </div>
+                <!-- <div class="card-btns">
+                    <a href="#" class="btn btn2 btn-card">start</a>
+                </div> -->
+            </div>
+            <!-- card two end -->
+            <!-- card three -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/amazon.png" alt="">
+                </div>
+                <div class="card-blue">
+                    <div class="card-info">
+                        <h3>Pellentesque :</h3>
+                        <p>velit</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maecenas :</h3>
+                        <p>quis</p>
+                    </div>
+                </div>
+                <div class="card-white">
+                    <div class="card-description">
+                        <h2>Aenean</h2>
+                        <p> Aliquam quis odio in lacus ullamcorper maximus. Aliquam efficitur interdum sollicitudin consectetur. Maecenas turpis velit, rhoncus et sodales eget, imperdiet id tellus.</p>
+                    </div>
+                </div>
+                <!-- <div class="card-btns">
+                    <a href="#" class="btn btn2 btn-card">start</a>
+                </div> -->
+            </div>
+            <!-- card three end -->
+            <!-- card four -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/vrdd.png" alt="">
+                </div>
+                <div class="card-blue">
+                    <div class="card-info">
+                        <h3>Pellentesque :</h3>
+                        <p>nec</p>
+                    </div>
+                    <div class="card-info">
+                        <h3>Maecenas :</h3>
+                        <p>porta</p>
+                    </div>
+                </div>
+                <div class="card-white">
+                    <div class="card-description">
+                        <h2>Vestibulum</h2>
+                        <p>Nulla quis scelerisque ipsum, id convallis est. Integer ut eleifend risus. Proin ut odio nibh. Phasellus ante metus, eleifend sed elit. Nullam at aliquet libero.</p>
+                    </div>
+                </div>
+                <!-- <div class="card-btns">
+                    <a href="#" class="btn btn2 btn-card">start</a>
+                </div> -->
+            </div>
+            <!-- card four end -->
+        </div>
+    </section>
+    <!-- card section end -->
+
+    <!-- section hotizontal -->
+    <section class="horizontal">
+        <!-- horixontal slide 1 -->
+        <div class="horizontal-slide hs1">
+            <div class="horizontal-slide-content">
+                <div class="hsc-text">
+                    <h1>Vestibulum semper</h1>
+                    <p>Curabitur vitae consequat. Quisque vulputate ex ac finibus blandit. Morbi velit lacus, luctus eu odio non, ultricies tincidunt purus. Mauris laoreet dignissim quam, et scelerisque magna iaculis vitae. Nam vitae tortor turpis. Phasellus dignissim tortor et neque varius, sed volutpat felis vehicula. Etiam faucibus, lorem tempor dignissim tristique, dolor augue congue nisl, a pretium tortor quam et felis.</p>
+                </div>
+                <div class="hsc-image">
+                    <img src="images/olympus.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- horizontal slide 1 end -->
+        <!-- horixontal slide 2 -->
+        <div class="horizontal-slide hs2">
+            <div class="horizontal-slide-content">
+                <div class="hsc-text">
+                    <h1>Pellentesque vitae</h1>
+                    <p>Vestibulum euismod mattis est, ac hendrerit risus hendrerit consequat. Etiam metus lorem, vulputate nec venenatis id, malesuada vulputate urna. Nam vitae rhoncus nunc, vitae maximus est. In vitae purus nunc. Nam accumsan, justo id condimentum malesuada, metus felis.</p>
+                </div>
+                <div class="hsc-image">
+                    <img src="images/controller 1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- horizontal slide 2 end -->
+        <!-- horixontal slide 3 -->
+        <div class="horizontal-slide hs3">
+            <div class="horizontal-slide-content">
+                <div class="hsc-text">
+                    <h1>Nullam at aliquet</h1>
+                    <p>Mauris sed dictum ligula. Proin finibus at tellus vel egestas. Sed congue lorem ac rutrum sollicitudin. Sed sollicitudin, sapien nec semper volutpat, est dui venenatis dui, eget tristique nulla lacus et metus. Quisque sodales tincidunt condimentum. Proin semper erat sed lorem molestie dictum.</p>
+                </div>
+                <div class="hsc-image">
+                    <img src="images/vrdd.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- horizontal slide 3 end -->
+    </section>
+    <!-- section hotizontal end -->
+
+    <section class="tech-bottom">
+        <div class="tech-bottom-content">
+            <div class="tbc-text">
+                <h1>tech.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem dolorum porro quas quisquam aut aspernatur corrupti commodi dolor nesciunt, expedita asperiores! Impedit, ullam iure id itaque cumque eaque accusantium enim incidunt ipsa aliquam repudiandae, dolor consectetur voluptate nostrum obcaecati repellat.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a class="web-link" href="#">FrontEnd Develeopard</a>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="tech.js"></script>
+</body>
+</html>
