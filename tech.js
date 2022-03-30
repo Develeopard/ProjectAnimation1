@@ -46,6 +46,15 @@ function engagePinSteps(){
         const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         return vh;
     }
+
+    let video = document.querySelector('.video-scroll');
+
+    const getVideoVh = () =>{
+        const vVh = video.clientHeight;
+        return vVh; 
+    }
+    
+    console.log(getVideoVh());
     
     gsap.utils.toArray('.video-scroll-text').forEach(section => {
         gsap.to(section,{
@@ -58,10 +67,10 @@ function engagePinSteps(){
                 start: 'top top',
                 end: () => `+=${section.clientHeight + getVh()}`,
                 endTrigger: '.vst4',
+                invalidateOnRefresh: true,
                 markers: true
             }
         })
-
     }) 
 
 }

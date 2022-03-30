@@ -172,7 +172,7 @@ header svg {
 }
 
 .video-scroll-section{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     position: absolute;
     top: 0;
     left: 0;
@@ -184,12 +184,13 @@ header svg {
 .video-scroll-text{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     padding: 3rem;
+    margin-bottom: 0;
 }
 
 .video-scroll-text h1{
@@ -308,7 +309,7 @@ header svg {
 /* Card Section end ============================= */
 /* Horizontal Section ==================================== */
 .horizontal{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 300%;
     display: flex;
     flex-wrap: nowrap;
@@ -326,7 +327,7 @@ header svg {
 }
 
 .horizontal-slide-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     column-gap: 3rem;
     grid-template-columns: 1fr 1fr;
@@ -356,7 +357,7 @@ header svg {
 
 .hsc-image img{
     /* margin-left: 50%; */
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     height: 500px;
 }
 
@@ -382,32 +383,47 @@ header svg {
 /* Tech-Bottom ================================================================= */
 .tech-bottom{
     width: 100%;
-    background: url('images/laptop.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    position: relative;
+
 }
 
 .tech-bottom-content{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 2rem;
+
 }
 
 .tbc-text{
     text-align: right;
+
 }
 
 .tbc-text h1{
     font-size: 20rem;
-    color: #0d0432;
+    color:#6883BA;
 }
 
 .tbc-text p{
     font-size: 1.5rem;
-    color: #0d0432;
-    /* max-width: 50%; */
+    color: #6883BA;
+    margin-left: 40%;
+    max-width: 50%;
+}
+/* Footer===================================================================================== */
+footer{
+    position: relative;
+    background-color: #0d0432;
+    width: 100%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0% calc(100% - 50vh));
+    padding: 10rem 2rem 10rem 3rem;
+    z-index: -1;
 }
 
+footer a{
+    color: #f9f9f9;
+    text-decoration: none;
+}
 @media(max-width:1024px){
     .hsc-text p{
         font-size: 1.2rem;
@@ -418,6 +434,7 @@ header svg {
     .hsc-text h1{
         font-size: 3rem;
     }
+
     .hsc-image img{
         height: 350px;
     }
@@ -425,11 +442,28 @@ header svg {
     .tbc-text h1{
         font-size: 5rem;
     }
+
+    .tbc-text p{
+        margin-left: 0;
+        min-width: 100%;
+    }
 }
 
 @media(max-width:770px){
     .info-text{
         width: 100%;
+    }
+
+    .cards-section{
+        padding: 2rem;
+    }
+
+    .cards-section-text h1{
+        font-size: 2rem;
+    }
+
+    .cards-section-text p{
+        max-width: 100%;
     }
 }
 
